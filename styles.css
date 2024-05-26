@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
+    padding: 1em;
     text-align: center;
 }
 
@@ -19,7 +20,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 1em;
 }
 
 nav ul li a {
@@ -28,16 +29,23 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
-    text-align: center;
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.product {
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #ddd;
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1em 0;
 }
