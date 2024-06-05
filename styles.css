@@ -13,6 +13,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Added for centering nav */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav ul {
