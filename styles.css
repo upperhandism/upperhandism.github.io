@@ -49,7 +49,7 @@ nav ul li a {
     font-weight: 700;
 }
 
-body.dark-mode nav ul li a {
+nav ul li a.dark-mode {
     color: #ffffff;
 }
 
@@ -80,7 +80,7 @@ main {
     background-color: #ffffff;
 }
 
-body.dark-mode main {
+main.dark-mode {
     background-color: #121212;
 }
 
@@ -94,7 +94,7 @@ footer {
     bottom: 0;
 }
 
-body.dark-mode footer {
+footer.dark-mode {
     background-color: #1e1e1e;
 }
 
@@ -103,7 +103,7 @@ h1, h2 {
     padding: 10px 0;
 }
 
-#home, #shipping, #shop {
+#home, #shipping {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -111,7 +111,7 @@ h1, h2 {
     margin-top: 20px;
 }
 
-body.dark-mode #home, body.dark-mode #shipping, body.dark-mode #shop {
+#home.dark-mode, #shipping.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
 }

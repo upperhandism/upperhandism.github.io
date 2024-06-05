@@ -1,5 +1,12 @@
 document.getElementById('dark-mode-toggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
+    document.querySelector('main').classList.toggle('dark-mode');
+    document.querySelector('header').classList.toggle('dark-mode');
+    document.querySelector('footer').classList.toggle('dark-mode');
+    document.querySelector('nav ul').classList.toggle('dark-mode');
+    document.querySelectorAll('nav ul li a').forEach(function(a) {
+        a.classList.toggle('dark-mode');
+    });
 });
 
 const darkModeStyles = `
@@ -7,23 +14,19 @@ const darkModeStyles = `
         background-color: #121212;
         color: #ffffff;
     }
-    body.dark-mode header {
+    header.dark-mode {
         background-color: #1e1e1e;
     }
-    body.dark-mode footer {
+    footer.dark-mode {
         background-color: #1e1e1e;
     }
-    body.dark-mode main {
+    main.dark-mode {
         background-color: #121212;
     }
-    body.dark-mode section {
-        background-color: #1e1e1e;
+    nav ul li a.dark-mode {
         color: #ffffff;
     }
-    body.dark-mode nav ul li a {
-        color: #ffffff;
-    }
-    body.dark-mode button {
+    button.dark-mode {
         background-color: #ff5722;
         color: #ffffff;
     }
