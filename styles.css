@@ -11,7 +11,7 @@ header {
     color: #fff;
     padding: 10px 20px;
     display: flex;
-    justify-content: center; /* Center the nav */
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -41,9 +41,13 @@ nav ul li a {
     font-weight: 700;
 }
 
-.profile-icon {
+.profile-icon, #dark-mode-toggle {
     position: absolute;
-    right: 60px; /* Adjust as needed */
+    right: 20px; /* Aligns both the profile icon and dark mode toggle */
+}
+
+.profile-icon {
+    right: 60px; /* Ensures the profile icon is left of the dark mode button */
 }
 
 .profile-icon img {
@@ -58,8 +62,6 @@ nav ul li a {
     border: none;
     padding: 10px;
     cursor: pointer;
-    position: absolute;
-    right: 20px; /* Adjust as needed */
 }
 
 main {
