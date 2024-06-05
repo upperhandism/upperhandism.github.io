@@ -42,10 +42,7 @@ nav ul li a {
 .profile-container {
     display: flex;
     align-items: center;
-}
-
-.profile-icon {
-    margin-left: 20px;
+    gap: 10px; /* Added gap to separate profile icon and dark mode toggle */
 }
 
 .profile-icon img {
@@ -60,7 +57,6 @@ nav ul li a {
     border: none;
     padding: 10px;
     cursor: pointer;
-    margin-left: 10px; /* Added margin to separate from profile icon */
 }
 
 main {
