@@ -11,9 +11,9 @@ header {
     color: #fff;
     padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the nav */
     align-items: center;
-    position: relative; /* Added for centering nav */
+    position: relative;
 }
 
 header h1 {
