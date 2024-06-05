@@ -47,6 +47,11 @@ nav ul li a:hover {
     color: #ff6347;
 }
 
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+}
+
 main {
     padding: 2rem;
     max-width: 1200px;
