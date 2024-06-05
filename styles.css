@@ -103,7 +103,7 @@ h1, h2 {
     padding: 10px 0;
 }
 
-#home, #shipping {
+#home, #shipping, #contact {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -111,7 +111,7 @@ h1, h2 {
     margin-top: 20px;
 }
 
-#home.dark-mode, #shipping.dark-mode {
+#home.dark-mode, #shipping.dark-mode, #contact.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
 }
