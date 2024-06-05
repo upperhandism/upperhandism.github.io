@@ -103,7 +103,7 @@ h1, h2 {
     padding: 10px 0;
 }
 
-#home, #shipping, #contact {
+#home, #shipping {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -111,7 +111,53 @@ h1, h2 {
     margin-top: 20px;
 }
 
-#home.dark-mode, #shipping.dark-mode, #contact.dark-mode {
+#home.dark-mode, #shipping.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
+}
+
+/* New styles for contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Dark mode styles */
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark-mode button[type="submit"] {
+    background-color: #ff5722;
+}
+
+body.dark-mode button[type="submit"]:hover {
+    background-color: #ff784e;
 }
