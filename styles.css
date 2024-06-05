@@ -9,11 +9,11 @@ body, html {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 20px; /* Increased padding for more height */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space elements evenly */
     align-items: center;
-    height: 60px; /* Adjusted height */
+    height: auto; /* Allow height to adjust based on padding */
 }
 
 header h1 {
