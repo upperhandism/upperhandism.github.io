@@ -9,10 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Dark mode toggle button event listener
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-    }
+    document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
 });
