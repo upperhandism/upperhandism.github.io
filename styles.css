@@ -105,15 +105,17 @@ h1, h2 {
 
 #home, #shipping {
     padding: 20px;
-    background-color: #fff;
+    background-color: transparent; /* Changed from white to transparent */
+    border: 2px solid #ccc; /* Added border to make it visible */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 #home.dark-mode, #shipping.dark-mode {
-    background-color: #1e1e1e;
+    background-color: transparent; /* Ensure the background is transparent in dark mode */
     color: #ffffff;
+    border: 2px solid #444; /* Adjust the border color for dark mode */
 }
 
 /* Contact Form Styles */
