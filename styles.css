@@ -2,27 +2,37 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
+}
+
+body.dark-mode, html.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px; /* Increased padding for more height */
+    padding: 20px;
     display: flex;
-    justify-content: space-between; /* Space elements evenly */
+    justify-content: space-between;
     align-items: center;
+}
+
+header.dark-mode {
+    background-color: #1e1e1e;
 }
 
 header h1 {
     margin: 0;
-    font-size: 24px; /* Adjust font size if needed */
+    font-size: 24px;
 }
 
 nav {
-    flex: 1; /* Allow it to take up space */
-    text-align: center; /* Center the nav */
+    flex: 1;
+    text-align: center;
 }
 
 nav ul {
@@ -39,10 +49,14 @@ nav ul li a {
     font-weight: 700;
 }
 
+nav ul li a.dark-mode {
+    color: #ffffff;
+}
+
 .profile-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Added gap to separate profile icon and dark mode toggle */
+    gap: 10px;
 }
 
 .profile-icon img {
@@ -63,6 +77,11 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
+}
+
+main.dark-mode {
+    background-color: #121212;
 }
 
 footer {
@@ -73,6 +92,10 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer.dark-mode {
+    background-color: #1e1e1e;
 }
 
 h1, h2 {
@@ -86,4 +109,9 @@ h1, h2 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+}
+
+#home.dark-mode, #shipping.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
