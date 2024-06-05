@@ -11,25 +11,24 @@ header {
     color: #fff;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Space elements evenly */
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+    height: 60px; /* Adjusted height */
 }
 
 header h1 {
     margin: 0;
-    flex: 1; /* Allow it to take up space */
+    font-size: 24px; /* Adjust font size if needed */
 }
 
 nav {
-    flex: 2; /* Allow it to take up more space */
-    display: flex;
-    justify-content: center;
+    flex: 1; /* Allow it to take up space */
+    text-align: center; /* Center the nav */
 }
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: inline-flex;
     gap: 15px;
     margin: 0;
     padding: 0;
@@ -41,17 +40,17 @@ nav ul li a {
     font-weight: 700;
 }
 
-.profile-icon, #dark-mode-toggle {
+.profile-icon {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .profile-icon img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 #dark-mode-toggle {
@@ -60,6 +59,7 @@ nav ul li a {
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin-left: 10px; /* Added margin to separate from profile icon */
 }
 
 main {
