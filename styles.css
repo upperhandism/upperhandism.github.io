@@ -105,17 +105,16 @@ h1, h2 {
 
 #home, #shipping {
     padding: 20px;
-    background-color: transparent; /* Changed from white to transparent */
-    border: 2px solid #ccc; /* Added border to make it visible */
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 #home.dark-mode, #shipping.dark-mode {
-    background-color: transparent; /* Ensure the background is transparent in dark mode */
+    background-color: transparent;
     color: #ffffff;
-    border: 2px solid #444; /* Adjust the border color for dark mode */
+    border: 1px solid #ffffff;
 }
 
 /* Contact Form Styles */
@@ -248,11 +247,4 @@ body.dark-mode nav ul li a {
 body.dark-mode button {
     background-color: #ff5722;
     color: #ffffff;
-}
-
-/* Ensure the dark mode applies to the settings panel */
-body.dark-mode .settings-panel {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    border: 1px solid #444;
 }
