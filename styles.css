@@ -103,7 +103,7 @@ h1, h2 {
     padding: 10px 0;
 }
 
-#home, #shipping, #track-order {
+#home, #shipping {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -111,37 +111,7 @@ h1, h2 {
     margin-top: 20px;
 }
 
-#home.dark-mode, #shipping.dark-mode, #track-order.dark-mode {
+#home.dark-mode, #shipping.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
-}
-
-#track-order-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#track-order-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#track-order-form button {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#track-order-form button.dark-mode {
-    background-color: #ff5722;
-    color: #fff;
-}
-
-#order-status {
-    margin-top: 20px;
 }
