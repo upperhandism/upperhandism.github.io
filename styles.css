@@ -117,6 +117,10 @@ h1, h2 {
     border: 1px solid #ffffff;
 }
 
+#home.dark-mode h2, #home.dark-mode p {
+    color: #ffffff; /* Ensure text color is white */
+}
+
 /* Contact Form Styles */
 form {
     display: flex;
@@ -218,6 +222,18 @@ body.dark-mode button[type="submit"]:hover {
 .settings-panel label {
     display: block;
     margin-bottom: 10px;
+}
+
+/* Dark mode styles for settings panel */
+body.dark-mode .settings-panel {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+body.dark-mode .settings-panel h3, 
+body.dark-mode .settings-panel label {
+    color: #ffffff;
 }
 
 /* Dark mode styles */
