@@ -1,5 +1,7 @@
 document.getElementById('dark-mode-toggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
+    document.querySelector('main').classList.toggle('dark-mode');
+    document.querySelector('section').classList.toggle('dark-mode');
 });
 
 const darkModeStyles = `
@@ -13,10 +15,10 @@ const darkModeStyles = `
     body.dark-mode footer {
         background-color: #1e1e1e;
     }
-    body.dark-mode main {
+    body.dark-mode main.dark-mode {
         background-color: #121212;
     }
-    body.dark-mode #home {
+    body.dark-mode section.dark-mode {
         background-color: #1e1e1e;
         color: #ffffff;
     }
