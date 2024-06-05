@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('button');
+    // Add to cart button event listeners
+    const buttons = document.querySelectorAll('button:not(#dark-mode-toggle)');
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
@@ -7,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Add dark mode toggle functionality
+    // Dark mode toggle button event listener
     document.getElementById('dark-mode-toggle').addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
     });
