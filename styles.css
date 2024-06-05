@@ -113,7 +113,7 @@ h1, h2 {
 
 #home.dark-mode, #shipping.dark-mode {
     background-color: transparent;
-    color: #ffffff;
+    color: #ffffff; /* Ensure text color is white */
     border: 1px solid #ffffff;
 }
 
