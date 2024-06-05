@@ -13,10 +13,18 @@ const darkModeStyles = `
     body.dark-mode footer {
         background-color: #1e1e1e;
     }
+    body.dark-mode main {
+        background-color: #121212;
+    }
     body.dark-mode #home {
         background-color: #1e1e1e;
+        color: #ffffff;
     }
     body.dark-mode nav ul li a {
+        color: #ffffff;
+    }
+    body.dark-mode button {
+        background-color: #ff5722;
         color: #ffffff;
     }
 `;
