@@ -9,11 +9,10 @@ body, html {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 20px; /* Increased padding for more height */
+    padding: 20px; /* Increased padding for more height */
     display: flex;
     justify-content: space-between; /* Space elements evenly */
     align-items: center;
-    height: auto; /* Allow height to adjust based on padding */
 }
 
 header h1 {
@@ -40,11 +39,13 @@ nav ul li a {
     font-weight: 700;
 }
 
-.profile-icon {
-    position: relative;
-    display: inline-flex;
+.profile-container {
+    display: flex;
     align-items: center;
-    margin-right: 10px;
+}
+
+.profile-icon {
+    margin-left: 20px;
 }
 
 .profile-icon img {
