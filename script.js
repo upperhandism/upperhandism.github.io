@@ -1,37 +1,40 @@
+// Toggle dark mode
 document.getElementById('dark-mode-toggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
-    document.querySelector('main').classList.toggle('dark-mode');
-    document.querySelector('section').classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 });
 
-const darkModeStyles = `
-    body.dark-mode {
-        background-color: #121212;
-        color: #ffffff;
-    }
-    body.dark-mode header {
-        background-color: #1e1e1e;
-    }
-    body.dark-mode footer {
-        background-color: #1e1e1e;
-    }
-    body.dark-mode main.dark-mode {
-        background-color: #121212;
-    }
-    body.dark-mode section.dark-mode {
-        background-color: #1e1e1e;
-        color: #ffffff;
-    }
-    body.dark-mode nav ul li a {
-        color: #ffffff;
-    }
-    body.dark-mode button {
-        background-color: #ff5722;
-        color: #ffffff;
-    }
-`;
+// Load dark mode preference
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+}
 
-const styleSheet = document.createElement("style");
-styleSheet.type = "text/css";
-styleSheet.innerText = darkModeStyles;
-document.head.appendChild(styleSheet);
+// Settings panel functionality
+const settingsButton = document.createElement('button');
+settingsButton.classList.add('settings-button');
+settingsButton.textContent = '⚙';
+document.body.appendChild(settingsButton);
+
+const settingsPanel = document.createElement('div');
+settingsPanel.classList.add('settings-panel');
+settingsPanel.innerHTML = `
+    <h3>Settings</h3>
+    <label>
+        <input type="checkbox" id="dark-mode-checkbox"> Dark Mode
+    </label>
+`;
+document.body.appendChild(settingsPanel);
+
+settingsButton.addEventListener('click', () => {
+    settingsPanel.style.display = settingsPanel.style.display === 'none' ? 'block' : 'none';
+});
+
+document.getElementById('dark-mode-checkbox').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+});
+
+// Set initial state of dark mode checkbox
+if (document.body.classList.contains('dark-mode')) {
+    document.getElementById('dark-mode-checkbox').checked = true;
+}
