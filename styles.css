@@ -11,18 +11,18 @@ header {
     color: #fff;
     padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Space elements evenly */
     align-items: center;
     position: relative;
 }
 
 header h1 {
     margin: 0;
-    position: absolute;
-    left: 20px; /* Adjust as needed */
+    flex: 1; /* Allow it to take up space */
 }
 
 nav {
+    flex: 2; /* Allow it to take up more space */
     display: flex;
     justify-content: center;
 }
@@ -42,18 +42,16 @@ nav ul li a {
 }
 
 .profile-icon, #dark-mode-toggle {
-    position: absolute;
-    right: 20px; /* Aligns both the profile icon and dark mode toggle */
-}
-
-.profile-icon {
-    right: 60px; /* Ensures the profile icon is left of the dark mode button */
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .profile-icon img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 #dark-mode-toggle {
