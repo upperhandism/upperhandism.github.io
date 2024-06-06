@@ -30,7 +30,40 @@
     <main>
         <section id="profile">
             <h2>Profile</h2>
-            <!-- Profile content goes here -->
+            <div id="auth-container">
+                <!-- Login Form -->
+                <div id="login-form" class="auth-form">
+                    <h3>Login</h3>
+                    <form id="login">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="email" required>
+                        
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="password" required>
+                        
+                        <button type="submit">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                </div>
+
+                <!-- Signup Form -->
+                <div id="signup-form" class="auth-form" style="display: none;">
+                    <h3>Sign Up</h3>
+                    <form id="signup">
+                        <label for="signup-name">Name:</label>
+                        <input type="text" id="signup-name" name="name" required>
+                        
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" name="email" required>
+                        
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="password" required>
+                        
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
