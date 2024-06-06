@@ -21,12 +21,14 @@ settingsButton.addEventListener('click', () => {
 // Switch between login and signup forms
 document.getElementById('show-signup').addEventListener('click', function(event) {
     event.preventDefault();
+    console.log("Signup link clicked");
     document.getElementById('login-form').style.display = 'none';
     document.getElementById('signup-form').style.display = 'block';
 });
 
 document.getElementById('show-login').addEventListener('click', function(event) {
     event.preventDefault();
+    console.log("Login link clicked");
     document.getElementById('signup-form').style.display = 'none';
     document.getElementById('login-form').style.display = 'block';
 });
