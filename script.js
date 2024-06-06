@@ -42,6 +42,7 @@ document.getElementById('show-login').addEventListener('click', function(event) 
 // Handle login form submission
 document.getElementById('login').addEventListener('submit', function(event) {
     event.preventDefault();
+    console.log("Login form submitted");
     // Implement login logic here
     alert('Login form submitted');
 });
@@ -49,6 +50,7 @@ document.getElementById('login').addEventListener('submit', function(event) {
 // Handle signup form submission
 document.getElementById('signup').addEventListener('submit', function(event) {
     event.preventDefault();
+    console.log("Signup form submitted");
     // Implement signup logic here
     alert('Signup form submitted');
 });
