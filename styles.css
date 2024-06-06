@@ -74,10 +74,12 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    color: #000000; /* Ensure text color is black in light mode */
 }
 
 main.dark-mode {
     background-color: #121212;
+    color: #ffffff; /* Ensure text color is white in dark mode */
 }
 
 footer {
@@ -105,16 +107,13 @@ h1, h2 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    color: #000000; /* Ensure text color is black in light mode */
 }
 
 #home.dark-mode, #shipping.dark-mode {
     background-color: #1e1e1e;
-    color: #ffffff;
+    color: #ffffff; /* Ensure text color is white in dark mode */
     border: 1px solid #ffffff;
-}
-
-#home h2, #home p {
-    color: inherit;  /* Inherit color from parent */
 }
 
 /* Contact Form Styles */
@@ -245,6 +244,7 @@ body.dark-mode footer {
 
 body.dark-mode main {
     background-color: #121212;
+    color: #ffffff;
 }
 
 body.dark-mode section {
