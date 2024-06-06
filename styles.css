@@ -113,12 +113,12 @@ h1, h2 {
 
 #home.dark-mode, #shipping.dark-mode {
     background-color: transparent;
-    color: #ffffff; /* Ensure text color is white */
+    color: #ffffff;
     border: 1px solid #ffffff;
 }
 
 #home.dark-mode h2, #home.dark-mode p {
-    color: #ffffff; /* Ensure text color is white */
+    color: #ffffff;
 }
 
 /* Contact Form Styles */
