@@ -1,11 +1,16 @@
+// Ensure the script is running
+console.log("Script loaded");
+
 // Toggle dark mode
 document.getElementById('dark-mode-checkbox').addEventListener('change', function() {
+    console.log("Dark mode toggled");
     document.body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 });
 
 // Load dark mode preference
 if (localStorage.getItem('darkMode') === 'true') {
+    console.log("Dark mode preference loaded");
     document.body.classList.add('dark-mode');
     document.getElementById('dark-mode-checkbox').checked = true;
 }
@@ -15,6 +20,7 @@ const settingsButton = document.querySelector('.settings-button');
 const settingsPanel = document.querySelector('.settings-panel');
 
 settingsButton.addEventListener('click', () => {
+    console.log("Settings button clicked");
     settingsPanel.style.display = settingsPanel.style.display === 'none' ? 'block' : 'none';
 });
 
