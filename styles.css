@@ -118,7 +118,7 @@ h1, h2 {
 }
 
 #home.dark-mode h2, #home.dark-mode p {
-    color: #ffffff;
+    color: #ffffff; /* Ensure text color is white */
 }
 
 /* Contact Form Styles */
