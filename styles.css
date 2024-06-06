@@ -116,6 +116,10 @@ h1, h2 {
     border: 1px solid #ffffff;
 }
 
+#home h2, #home p {
+    color: inherit; /* Inherit color from parent */
+}
+
 /* Contact Form Styles */
 form {
     display: flex;
