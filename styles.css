@@ -101,7 +101,7 @@ h1, h2 {
     padding: 10px 0;
 }
 
-#home, #shipping {
+#shop {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -110,13 +110,13 @@ h1, h2 {
     color: #000000; /* Ensure text color is black in light mode */
 }
 
-#home.dark-mode, #shipping.dark-mode {
+#shop.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff; /* Ensure text color is white in dark mode */
     border: 1px solid #ffffff;
 }
 
-#home h2, #home p {
+#shop h2 {
     color: inherit; /* Inherit color from parent */
 }
 
