@@ -76,6 +76,15 @@ if (signupForm) {
     signupForm.addEventListener('submit', function(event) {
         event.preventDefault();
         console.log("Signup form submitted");
+
+        const password = document.getElementById('signup-password').value;
+        const confirmPassword = document.getElementById('signup-confirm-password').value;
+
+        if (password !== confirmPassword) {
+            alert('Passwords do not match.');
+            return;
+        }
+
         // Implement signup logic here
         alert('Signup form submitted');
     });
